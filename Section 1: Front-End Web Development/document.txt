@@ -1,1 +1,11 @@
+How Does the Internet Actually Work?
+  Servers are gaint library that is operating all the time and provides information to client what they have requested
+  any computer that uses the server fetched info  are client 
+  every single computer connected to internet has an individual IP address
 
+
+ How Do Websites Actually Work?
+  In order to access webpage we need browser and it has code files to send to a server and get response from a server 
+ HTML---> gives structure of website(builds the structure)
+ CSS ----> styling a website (modify the appearance of website we wanted to do)
+  javascript ---> doing the functionality of website(the behaviour we wanted)
