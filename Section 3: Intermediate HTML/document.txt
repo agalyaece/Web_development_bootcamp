@@ -1,1 +1,14 @@
+1. The List Element:
+  ordered list
+  unordered list
+contents goes inside <li> </li> tag inside the list elements
 
+2 Anchor Elements
+    goes with a tag
+        syntax:  <a href="">some content</a>
+    href is attribute to anchor element
+    we can add more than one attribute and each is seperated by commas
+
+3. Image Elements
+  void element, should give source for the image looking for
+syntax: <img src=""   alt="">
