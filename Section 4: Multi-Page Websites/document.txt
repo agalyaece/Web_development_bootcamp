@@ -1,0 +1,19 @@
+1. Computer File Paths:
+  absolute file path: --follows the hierarchy of folder structure
+    like----c:/admin/project
+  Relative file path -----> uses dot notation to denote the target files 
+    ../ --->represents one folder up from the parent folder and make a search to target file
+    ./ ----> represents to the parent folder  and make a search for target files
+
+2.The HTML Boilerplate
+   denotes standard notation for htnl files
+  
+<!DOCTYPE html> -----> denotes html version to browser
+    <html lang="en">
+    <head>
+        
+    </head>
+    <body>
+        
+    </body>
+    </html>
