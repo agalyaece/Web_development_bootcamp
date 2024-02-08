@@ -17,8 +17,6 @@ HEADING WORKS LIKE: ---   <h1> some heading </h1>
   <hr/> tag
   <br/> tag
 
-5. Image Elements
-  void element, should give source for the image looking for
-syntax: <img src=""   alt="">
+
 
 
