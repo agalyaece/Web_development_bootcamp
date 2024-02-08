@@ -1,1 +1,24 @@
+1. What is HTML?
+HyperText ----> piece of text links to other piece of other document
+MarkupLanguage --->these are tags
+
+2. HTML Heading Elements
+  starts from h1 to h6
+  needs to follow hirearchy while assigning a heading tag
+  h1 should be used once per html file
+HEADING WORKS LIKE: ---   <h1> some heading </h1>
+
+3.HTML Paragraph Elements
+  goes with <p> </p> tag
+  content goes inside the tag
+
+4.Self Closing Tags
+  void elements i.e., forbidden from contents
+  <hr/> tag
+  <br/> tag
+
+5. Image Elements
+  void element, should give source for the image looking for
+syntax: <img src=""   alt="">
+
 
