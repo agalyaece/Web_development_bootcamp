@@ -1,0 +1,87 @@
+1. CSS Colours
+  color properity can be applied to tags to change colors particular to it
+    css_selector{
+        background-color: values ------>background-color attribute assign to change the backgroung color in webpage
+        color: value ----color attribute assigns to the text color
+        }
+
+    we can use named color as well as the hex-code colors as a value to the attribute
+      find colors in colorhunt.co and in mdn doc
+
+
+2. Font Properties
+        changing the appearance of text in webpage
+      attribues are:
+          1.color
+          2.font-size
+          3.font-weight
+          4.font-family
+
+    font weight: 
+      1px =1/96th of inch
+      1pt = 1/72nd of inch
+      1em = 100% of parent  ---->relative size to the parent element where it is located
+      1rem = 100% of root -------> scaled size of the root(html) -- this is commonly used
+
+      There is also a named font size like large, xx-large
+
+    font-weight:
+      1.normal, bold like keywords
+      2. lighter -- (-100)
+          bold ---- (+100)
+          This is also relative to the parent
+      3. number:
+            100 - 900
+                100 represents light
+                900 represents bold
+
+    font-family:
+      css_selector{
+                font-family:typeface, backup generic font type
+                  }
+          if typeface is having more than one word it is included in quotation mark
+
+      for custom fonts we can get it from fonts.google.com and we  can link it to the stylesheet as we are doing for linking CSS files
+            and have to include it in CSS file like the way we are including a font family
+
+      text-align:
+            css_selector{
+                      text-align: value
+            }
+              value can be center, left, right, start, end 
+
+3.. Inspecting CSS
+      using CSS overview by chrome developer tools
+                what CSS is doing and potential diagonize of any bugs there and fixing issues
+
+      
+
+4. The CSS Box Model - Margin, Padding and Border
+  box model: specifing width and height making a box virtualy
+     it can be either in pixels or in  percentage
+  border element: specifies thickness style and color for border
+        border:thickness style color
+
+    boder always goes outside which doesn't affect the content inside
+  padding:
+    It makes the text to go inwards, its width and height doesn't change while including padding
+  margin:
+    it goes outside from the box which also  not alter the border
+      if two boxes are placed one after the other margin becomes common to both the element
+
+  creating this type of artificial boxes is done through div element(content division element) <div> </div>
+
+ pesticide for chrome is a downloadable chrome extensions  is used to debug these invisible div's
+
+
+5. [Project] Motivational Poster Website
+
+      1. The main h1 text should be using the Regular Libre Baskerville Font from Google Fonts:
+        which is downloaded from https://fonts.google.com/specimen/Libre+Baskerville
+      2. The text is of white and background is black.
+      3. Adding  the image into the images folder inside assets. It have a 5px white border.
+      4. The text are center aligned.
+      5. Created a div to contain the h1, p and img elements. Adjusting the margins so that the image and text are centered on the page. 
+      6. horizontally center a div by giving it a width of 50% and a margin-left of 25%.
+      7. Setting the image to have a width of 100%. 
+                
