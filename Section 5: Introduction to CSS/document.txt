@@ -1,0 +1,94 @@
+1. Why do we need CSS? 
+  To style websites
+
+  cascading --> type of language
+  StyleSheets ----> type of language that specifies how the page look like
+
+  to attach styles(i.e., font,color,spacing) to html document
+  CSS language is human readable and writable and expressess style in common desktop publishing treminology
+
+2. How to add CSS?
+    inline --->single element
+    internal --->single webpage
+    external  --->multipage website
+  
+  Inline: 
+    <tag attribute_name= " value for attribute"> </tag>
+    -----goes into same line as  the particulae html element
+  here style attribute is available globally
+  inline is used whenever we want to add single time in html file
+
+  Internal:
+      can apply to anywhere in html document, inside we can target or select as many elements as we want
+      used for applying to only one html document, i.e., any file enclosed between <html>  </html> tag
+
+  so if we are having multipage website it doesn't work
+  
+  <html>
+    <head>  ------------should goes inside a head part
+      <style> ---------->style tag represents a css attribute
+        html{ ----------->selector comes before the curley brackets
+              background:red; ---->CSS should be inside a curley braces
+            }
+       </style>
+     </head>
+   </html>     
+
+  External:
+    CSS --- live completely as a seperate file which holds CSS rules for webpages
+      this is used most common
+
+      <link
+        rel="stylesheet"  --------->specifies relation
+        href="path to the stylesheet"  --------->specifies location to where it should be linked
+      />
+
+3. Quiz 1: CSS Quiz
+      Quiz related to adding css 
+
+4. CSS Selectors:
+    chose where to apply css
+      CSS selectors selects the html in order to apply the property inside the curley braces
+
+    1.element selector: -- targeting a particular html tag. applicable to all tags enclosing the css selector
+      css_selector{
+                    attribute: value
+                    }
+    2.class selector: ---adding class  as an attribute to any html element
+      This attribute is grouping element in html to apply same css to all the class files that names the same
+      It allows to group different parts of html file into having the same styling, i.e., used for multipage websites with lots of different element
+            
+        .class_name{
+                    attribute: value
+                    }
+    
+    3. ID selector:
+        completely unique. used for only one element in single html file
+
+          #ID_name{
+                    attribute: value
+                    }
+    4.attribute selector:
+        we can use all the attributes to select for a specific styling
+          html_element[attribute_name] {
+                                     attribute: value
+                                      }
+    5.universal selector:
+      irrespective of any element * is applied to all elements present in html
+        *{
+            attribute: value
+         }
+
+
+5. [Project] Colour Vocab Website
+      1. Created a CSS file and incorporate it as an external stylesheet.
+      2. Used CSS to style each of the color titles to meaning. 
+           Used the id to match color tiles.
+      3. Used CSS to change all the color titles to have "font-weight: normal;"
+      4. Used CSS to make all the images 200px heigh and 200px wide. 
+
+
+
+
+      
+  
