@@ -1,0 +1,109 @@
+1. The Cascade - Specificity and Inheritance
+    cascade system works based on hierarchy
+  The thing which is atleast of cascade system works
+
+there are 4 categories:
+    1.position
+    2.specificity
+    3.type
+    4.importance
+
+  1.position:
+  the css as external file or internal style element the css at last position works
+    li{
+        color:red; -----position1
+        color:blue; ----position2
+      }
+    li{ color:green;} ----position3
+
+      the one at position 3 works here
+
+  2.specificity
+      <li id="first-id" class="first-class" draggable >
+      selecting ways include:
+
+          4th ----> element
+          3rd ----> class
+         2nd ----> attribute
+         1st ----> id
+
+  3. type
+      <link rel="stylesheet" href="/style.css"> --->external
+      <style>  </style> ----internal
+      <h1 style= "" > hello </h1> ----inline
+       
+        3rd ----> external
+         2nd ----> internal
+         1st ----> inline
+      here inline targets the specific element
+
+  4.Importance
+      color: green !important; ----this takes the top level of priority
+
+  at last these 4 also having priority
+        
+        4th ----> position
+          3rd ----> specificity
+         2nd ----> type
+         1st ----> Importance
+        
+
+
+2. Combining CSS Selectors
+    How to target specific element in style
+
+    1.group selector:
+        group = Apply to both selectors----same style to entire group
+        selector,selector{
+                color:blue;
+        }
+
+    2.child selector:
+            apply to direct child of left side and has to be one level nested inside
+       selector(parent) > selector(child){
+                                  color:blue;
+                                }
+   3.descendent:
+        apply to descendent of left side
+          
+          selector(ancestor) > selector(descendent){
+                                  color:blue;
+                                }
+
+4.chaining:
+  apply where all selectors are true
+    no spaces in between the selectors
+        selectorselector{
+                color:blue;
+  }
+
+          3rd ----> classes
+         2nd ----> id
+         1st ----> element
+
+5.combining combiners
+            selectorselector can be of different combinations
+        selector selectorselector{
+                font-size:5rem;
+        }   
+
+
+3. CSS Positioning:
+relative, absolute, fixed, static positioning
+
+  1.static: HTML default flow in positioning items
+  2.relative: position relative to default position, takes original position and apply changes  and move it to some position where it should be, relative to its suposed position
+  3.absolute:position relative to nearest positional ancestor (or) top left corner of webpage
+        if 1st condition becomes invalid 2nd comes to work
+      z-index it determines which element goes on top of z-axis, thinking about webpage as a graph 
+  4.fixed : position relative to top left corner of browser window
+
+
+ 4. [Project] CSS Flag
+     using about combining selectors and CSS specificity to design a flag
+    The flag is 900px by 600px and the circle is 200px by 200px and inner blue rectangle is 900px by 300px.
+    writing internal css and made absolute and relative position to position these rectangles and circles in place as per the goal
+    finally modifying the paragraph element to make changes in color and position of words to the flag
+
+
+    
