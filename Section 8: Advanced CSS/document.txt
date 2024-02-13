@@ -1,0 +1,54 @@
+1. CSS Display:
+  span in middle of another element --- unique thing to get modified using css
+
+    having different values for display property alter the display for different screens
+
+    1.block: allows to set height and width
+    2.inline: it is default as per the content of the screen, can't set the size for the elements
+    3.inline-block: allows both inline and block property
+    4. None: clears the already applied display on the screen
+
+2. CSS Float
+      wrapping text using float and clear
+      put in css styles as 
+   selector { float: left (or) right; }
+
+3. How to Create Responsive Websites
+  making websites look good on all screen sizes(desktop, laptops, tabs, phone)
+
+    There are 4 ways to create it:
+      1.Media queries
+      2.css grid
+      3.css flexbox
+      4.external frameworks eg:bootstrap
+
+4. Media Queries
+        adding breakpoints to define rsponsive layouts
+
+        @media(max-width:600px){
+                      selector{
+                                attribute:value;
+                      }
+                    }
+            breakpoints maybe max-width or min-width changed according to the requirements
+
+      combine breakpoints: ---using various combinations to achieve this goal
+          @media(min-width:481px) and (max-width:1200px){
+                /* styles for screens between 481px and 1200px*/ 
+              }
+
+           @media(max-width:481px) and (min-width:1200px){
+                /* styles for screens lessthan 481px and greater than 1200px*/ 
+              }
+      device:
+         @media screen(orientation: landscape){
+               /* styles for landscape orientation*/ 
+              }
+        we can also use print in place of screen to make the print property to work
+
+
+5. [Project] Web Design Agency Website
+          created a website that fits for 680px and above using @media query
+          created css code to work on this
+          making images to float according to the content
+          used media query to get the logos images contents justified as the screen size reduces to 680px 
