@@ -1,0 +1,6 @@
+1. Display: Flex -- what is it and how is it works:
+    flaot is used for magazine layouts
+    flexbox is used for overall page structure
+
+  flex 
+  
