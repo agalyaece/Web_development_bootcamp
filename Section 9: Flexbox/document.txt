@@ -2,5 +2,53 @@
     flaot is used for magazine layouts
     flexbox is used for overall page structure
 
-  flex 
+  flex displays like a column, used for arranging the contents in reasonable and commonly desirable way
+wraps divs inside a container and target that container in css and set display to flex
+
+.container{
+        display:flex;  ----->creates flex container with 100% width
+        gap: 10px;  --->this property to set gap may be static to desired value(10px) or dynamic as 1rem or 100%
+    }
+display:inline-flex --->It allows flex box to occupy as much as space it needs as other things can also go and occupy the container
+
+
+2. Flex Direction - row and column layout
+        How to modify the flex-box inorder to the way the layout we want
+
+    This establishes the main-axis, thus defining the direction flex items are placed in the flex container
+    .container{
+        flex-direction:row| column;
+        }
+    row : left to right   (actually increases the width)  
+    column: top to bottom (actually increases the height)
+
+flex-basis: 100px;  --->this increases width along its main axis 
+this actually goes on to the child not with the container 
+
+
+3.Flex Layout - align, justify, wrap
+    1.order:0;  this property goes to child 
+        picking out specific element from flrx-box and set its order property as we want
+    2.flex-wrap --this property goes to child
+        when window is run out of space in horizontal axis this works
+        flex-wrap:nowrap
+        flex-wrap:wrap
+        flex-wrap:wrap-reverse
+    3.justify-content: flex-start --set on parent container
+            sets distribution along the main axis
+        justify-content: flex-end;
+        justify-content: center;
+        justify-content: space-between
+    4.align-items:flex-start --position of items
+        distribution along vertical axis
+    vh-viewport height
+        align-items: flex-start| flex-end| center| baseline| stretch
+        height:70vh;
+when one particular item to align on different position use align-self: flex-start
+    5.align-content: works when flex-box is wrapped
+
+4. Flex Sizing- shrinking and growing
+    if width of window gets shrinked flexbox also gets shrinked as they can accomadate all
+priority:
+    content-width< width< flex-basis< min-width/max-width
   
