@@ -1,0 +1,46 @@
+1. Display: Grid
+  A two dimensional layout
+  arranges in row and column basis and equal gap between them
+
+  .container{
+        display: grid;
+        grid-template-columns: values;
+        grid-template-rows: values;
+        gap: 10px}
+
+2.Grid sizing:
+  sizing rows and columns
+    1.fixed size:
+         grid-template-columns: fixed values;
+        grid-template-rows:fixed values;
+      This type is not responsive
+    To make this to responsive setting any one content to auto 
+
+      2.fractional size:
+          values may be anything but it maintains the ratio as on increasing or decreasing the size of windows
+            referred by 1fr or 3fr like this
+
+      3.minmax size:
+          limiting the size of column inside a grid
+            minmax(200px,400px)
+    when we don't define enough rows and columns to accomadate in grid we can place "grid-auto-rows:value;"
+
+3. Grid item placement:
+        used for layout items inside grid
+          div-->grid-container
+          grid item
+          grid line---gap between the lines
+          grid cell -->smallest unit in grid
+          row tracks and column tracks
+
+      using chrome developer tools we can identify grid numbers and used for arranging layout
+
+          defining 
+            grid-column-start:value
+            grid-column-end:value
+            grid-row-start:value
+            grid-row-end:value
+              start and end canbe from anyside
+              the cumulative of above is noted as grid-area: 1/2/3/4
+                where 1--->grid-row-start, 2--->grid-column-start, 3--->grid-row-end, 4--->grid-column-end
+          
