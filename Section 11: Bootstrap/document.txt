@@ -1,0 +1,22 @@
+1. What is Bootstrap? 
+  It is free and open-source, and it is directed at responsive, mobile-first front-end web development 
+  It contains HTML, CSS, and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components 
+
+when to use bootstrap: designing a mobile first approach and getting uniform design
+when not to use bootstrap: simple websites or complex,fully customized websites
+
+  include bootstrap link in header section and javascript link at the end of body section 
+
+2.Bootstrap layout:
+  container-->row----> column
+  each container is divided into 12 column layout system
+  we can set breakpoints for different screen sizes 
+
+  documentation in bootstrap is noted for sizes
+
+3. Bootstrap Components
+  refer documentation of bootstrap  for components
+
+4. [Project] TinDog Startup Website
+  used bootstrap components to design this fully fledged website
+  uploaded in git 
