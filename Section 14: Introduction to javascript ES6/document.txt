@@ -1,0 +1,90 @@
+1. Introduction to Javascript:
+  when web browser needs data it send its request to web servers and accepts the data from the servers
+    when web browser becomes more dynamic it needs animation and user interface so it is needed to takeaway the servers and have the code able to run on the browser
+    Inorder to do this created a scripting language
+
+  name evolution : live script ----> jscript ----> ECMA script(standarised script)
+java script contains elements
+    it is a interpreted language
+    modern javascript is used in frameworks ranging from frontend to backend development
+    it is compatable with any browsers
+
+
+  2. Javascript Alerts - Adding Behaviour to Websites
+
+    working on chrome developers tool console or in source to write code
+
+    alert("some text") ----->this creates popups
+    prompt("some text") ----> this get input from user in live
+
+3. Data Types
+      way of classifying data to tell the computer how program intends to use data
+    1.string
+    2.Numbers
+    3.Boolean
+
+  checking type of datatype use --- typeof(checking content)
+
+4. Javascript Variables
+    syntax: var myName = "Agalya";
+    var ---> keyword that constructs a container for that variable
+    myName --->Name of container
+    Agalya --->value
+
+
+5. Coding Exercise 1: Javascript Variables Exercise
+    Given the existing code below, can you write some code so that their values are switched around?
+    var a = "3";
+    var b = "8";
+
+      So that the variable a holds the value "8".
+      And the variable b holds the value "3".
+
+    this is done by setting 3rd variable and done swapping
+
+    
+6. Naming and Naming Conventions for Javascript Variables:
+  1. give meaningful names
+  2.variable name shouldnot be var, but the variable name can cintains this keyword
+  3. variable can't be numbers, but can contain numbers and can't start with numbers
+  4. can't contain spaces
+  5. can contain only letters, numbers, $, _
+  6. use camlecase to name variables
+
+7. String Concatenation
+  anything inside " " are joined by '+' sign  provides cancatenated strings
+
+8. String Lengths and Retrieving the Number of Characters
+    variable.length() ---this retrives number of Characters that this variable holds 
+
+9. Slicing and Extracting Parts of a String
+    seperate string into required number of individual characters
+  syntax: name.slice(x, y)
+    x-->at position 
+    y ---> continue upto this position not including this position
+
+10. Challenge: Changing Casing in Text
+  syntax: word.toUpperCase();
+          word.toLowerCase();
+
+11.Basic Arithmetic and the Modulo Operator in Javascript
+  sum--> +
+  difference ----> -
+  multiplication --- > *
+  division ---->/
+  modulo ---> %
+
+12. Increment and Decrement Expressions
+  increment by x++
+  decrement by x--
+
+  assigning also done by +=, -=, *=, /= 
+
+13. Functions Part 1: Creating and Calling Functions
+  allows to create series of instructions packaged into a block of code
+  calling a function executes series of instructions
+    syntax:
+        creating function: function fnName(){ ....}
+        calling function:  fnName();
+  alert---> used for user interaction
+    console.log ---> show up only on console which is not intended for user interaction. it is meant for developer to debug code and print it on console
