@@ -88,3 +88,27 @@ java script contains elements
         calling function:  fnName();
   alert---> used for user interaction
     console.log ---> show up only on console which is not intended for user interaction. it is meant for developer to debug code and print it on console
+
+14.Functions Part 2: Parameters and Arguments
+    syntax:
+        creating function: function fnName(variable name){ do something }
+        calling function:  fnName(value to variable);
+
+    Math.floor() --->rounds a number down to the nearest integer
+
+15. Coding Exercise 2: Life in Weeks Coding Exercise
+    created a function that tells us how many days, weeks and months we have left if we live until 90 years old.
+    It will take your current age as the input and console.logs a message with our time left in this format:
+          You have x days, y weeks, and z months left.
+
+16. Functions Part 3: Outputs & Return Values
+    syntax:
+        creating function: function fnName(variable name){
+                                                          return value
+                                                          }
+        calling function:  var variablename = fnName(value to variable);
+
+17.Challenge: Create a BMI Calculator:
+     calculate it using the formula , where weight divided by height squared.
+to find squared ----use --->Math.pow(x,y) returns value of x to the power of y 
+to get rounded value ----use ---> Math.round() rounds a number to nearest integer
