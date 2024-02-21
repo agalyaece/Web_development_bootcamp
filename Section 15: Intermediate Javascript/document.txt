@@ -36,3 +36,62 @@
     BMI >24.9, the output should be "Your BMI is <bmi>, so you are overweight."
 
       this is done by comparing the bmi values calculated using combining compatators for evaluating the conditions
+
+
+6.Coding Exercise 5: Leap Year Challenge Exercise
+    Writing a program that works out whether if a given year is a leap year.
+
+    This is how to work out whether if a particular year is a leap year:
+        A year is a leap year if it is evenly divisible by 4 ;
+        except if that year is also evenly divisible by 100;
+        unless that year is also evenly divisible by 400.
+   
+    using if/else if/ else condition to solve this
+
+7.Collections: Working with Javascript Arrays
+    for storing datas in variables limited to store a single piece of data
+array ---> store a collection of related items into the same container/variable
+
+    var eggs = [1,2,3,4]
+    var myEggs = eggs[1] ---> retriving data
+    eggs.length --->gives length of array
+    eggs.include --->checks if array includes this item or not, it retuns boolean
+
+8. Adding Elements and Intermediate Array Techniques
+    adding new item into the array ---> array_name.push()  ----->always adds at the end of the array
+    delete last item from list ----> array_name.pop() 
+
+    fizzbuzz program to execute push function
+
+9. Coding Exercise 6: Who's Buying Lunch? Code Challenge 
+    write a function which will select a random name from a list of names. The person selected will have to pay for everybody's food bill.
+
+used Math.random() and a math.floor to select the random array list number
+then used array retrival for that randomly selected number
+
+10.  Control Statements: While Loops
+    syntax:
+        while(something is true){
+                    //do something
+                    }
+
+11. Control Statements: For Loops
+    syntax:
+        for(var i=0; i<2; i++){  
+                    //do something
+                    }
+            i=0 --->start
+            i<2 --->end
+            i++ ---> change in value
+allows to count in any direction, increase/decrease the values
+
+        when to use for loop and while loop
+            while loop -----> state
+            for loop -----> iterate
+
+12. Coding Exercise 7: The Fibonacci Exercise
+    every number is the sum of the two previous ones. The first two numbers in the sequence must be 0 and 1.
+
+        used if/else if --- to provide an array for 1st two numbers
+        then calculation is done by for loop iteration for upto n number of values
+
