@@ -1,0 +1,44 @@
+1. Adding Javascript to Websites
+  done in 3 ways
+    1.inline 
+        <body onload = javascript code;>
+        </body>
+            this has limitation --- difficuilt to debug and not good to practice
+
+    2. internal
+        <body>
+        <script type = "text/javascript">
+          javascript code
+        </script>
+        </body>
+
+    3.external
+      create a new java script file and add a required javascript code 
+      <body>
+      <script src = "index.js" charset ="utf-8">
+      </script>
+      </body>
+           place script tag at the end of body tag
+
+
+2. Introduction to the Document Object Model (DOM)
+  when our website to be interactive,then we want to change the parts of  website in the flag(responding to a click, want to update our websites)--- here comes DOM
+  it catalogue the webpage into individual objects that we can select and manipulate
+  converting html page into DOM is done by browser while loading webpage
+  turns each of element and its associated data into tree structure --relationship matters in tree diagram
+
+  steps to navigate : tap into DOM using javascript and navigate through this tree structure
+
+      document.firstElementChild; ---->this tap into first child in tree
+      manipulation is done by ----variableName.innerHTML = "value assigning" 
+
+      selecting elements and doing things is done by
+          document.querySelector("value to select").click();
+
+      objects inside DOM contains:  
+                1.properties: --- that describes something about objects denoted by .notation followed by property name
+                    in properties we can get and set properties
+                2.Methods : ---things that can do something (functions that object can do) denoted by .notation method name()
+
+  3.. Selecting HTML Elements with Javascript
+  
