@@ -41,4 +41,39 @@
                 2.Methods : ---things that can do something (functions that object can do) denoted by .notation method name()
 
   3.. Selecting HTML Elements with Javascript
-  
+          1. document.getElementsByTagName ("name of tag") 
+          2. document.getElementsById("#idName")
+          3.document.getElementsByClassName(".className")
+another method of selecting a single element is querySelector, like in css selectors we can use the same and can combine any of these selectors
+        4. document.querySelector("#list-id a") ----->this selects the single items 
+        5. document.querySelectorAll("#list-id a") ----->this selects the all items inside a target selector, it returns as a list and target this like an array
+
+
+4. Manipulating and Changing Styles of HTML Elements with Javascript
+  selecting style is same as that of css styles insted here we are using camel case version
+  can change all css properties using javascript
+
+5. The Separation of Concerns: Structure vs Style vs Behaviour
+    in order to maintain our websites neat and east to debug, we have to maintain the idea of seperation of concerns
+    HTML -- content
+    css -- style websites
+    javascript --- behaviour of websites
+
+  .classList --->property of every DOM object
+      The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list. 
+
+      .classList.add("")
+      .classList.remove("")
+      .classList.toggle("") --->turns off the class when it is ON and vice-versa. It is easy for debugging when behaviour of webpage is not good
+
+
+6. Text Manipulation and the Text Content Property
+    Manipulation text inside the html element
+      1. document.querySelector("h1").innerHTML ---->this gives text as well as the other tags enclosed by the specified html element
+      document.querySelector("h1").textContent ---->this gives only the text in the selected html element
+
+7. Manipulating HTML Element Attributes
+    1. document.querySelector("a").attributes ---->this gives all the attributes associated with a
+    2. document.querySelector("a").getAttributes("href") ---->this gives values for href
+    3.document.querySelector("a").setAttributes("href", value to attributes) ---->this gives new values for href
+      setAttributes takes two parameters
