@@ -1,0 +1,19 @@
+1.What We'll Make: Drum Kit 
+  program that works like a drum kit
+  
+2. Adding Event Listeners to a Button
+    The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target.
+  syntax:
+      addEventListener(type, listener)
+      type: A case-sensitive string representing the event type to listen for.
+      listener: an object that implements the Event interface) when an event of the specified type occurs.This must be null, an object with a handleEvent() method, or a JavaScript function.
+
+3. Higher Order Functions and Passing Functions as Arguments
+        addEventListener takes two inputs of which one is a function
+        function can be named or anonymous function and is passing as an input to addEventListener
+
+        syntax:
+            $0.addEventListener(input1, input2) ---->input2 is a function
+        
+
+  
