@@ -1,0 +1,56 @@
+1. What is jQuery?
+    jQuery is a fast, small, and feature-rich JavaScript library.
+    It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. 
+
+2. How to Incorporate jQuery into Websites    
+      www.jquery.com
+
+      take googleCDN to include in file 
+
+    if user has been in another website that uses this same CDN, they already been cached and saved in the browser. so if user loads up our webpage, they not need to wait for fresh copy of jquery and website works faster to load it
+
+    use latest version of jquery in script tag
+
+      incorporate googleCDN just before the javascript tag so it works fine 
+  if we place googleCDN and javascript tag inside the header section then our index.js should be modified to check if the jquery library is ready
+        $(document).ready(function(){
+                  // code to execute
+                })
+
+3.How Minification Works to Reduce File Size
+      removing all comments and spaces and place all javascript codes together to get a minified form for that code
+      thus it reduces the size of the file and takes minimum time to load 
+
+      www.minifier.org makes this for our code
+
+4. Selecting Elements with jQuery
+      basic function in websites is selecting elements in webpage
+          javascript----> document.querySelector("h1")
+          jquery ---> $("h1")
+                here we can also specify css selector if we need to select elements in css. therefore it is compatible
+                      $("buttons") --->here there is no difference in between selecting one elements and many
+
+5. Manipulating Styles with jQuery
+      syntax: --- $("select element").css("property", "value for that property") ---->setting values to the property
+              ---- $  ("select element").css("property")   ---->getting values for the property
+
+      it is not good to incorporate styles in javasript instead make a class for change in property in css and add a class to javascript
+    use jquery to add, remove class to the selected items
+      $("h1").addClass("newClassName1 newClassName2")
+      $("h1").removeClass("newClassName1")
+
+      we can also check whether class is included or not
+        $("h1").hasClass("ClassName")  ---->this returns true or false based on the presence of class
+
+6. Manipulating Text with jQuery
+      changing the text of the selected elements
+      two ways for doing this:
+          1.  $("h1").text("some text") ---->.text method takes everything inside the  " " mark and makes as plain text
+          2.  $("h1").html("<em> some text </em>") ---->.html method takes everything inside the  " " mark and makes as per the mention html tag and make changes, finally as plain text as only the text area
+      
+7. Manipulating Attributes with jQuery    
+      able to get and set attributes (like href, src) on the flag
+          $("img").attr("src") --->for getting values for attributes
+          $("img").attr("href", "value to be changed") --->for setting new values to attributes
+      class is also an html attribute
+          $("img").attr("class")
