@@ -15,5 +15,81 @@
         syntax:
             $0.addEventListener(input1, input2) ---->input2 is a function
         
+4. How to Play Sounds on a Website:
+  this is always a reference to an object. The value of this depends on in which context it appears: function, class, or global.
 
+      if we want to specify, which key is pressed  this keyword is pointing out the clicked operation
+      
+      function(){
+          this.style.color = "white";
+      }
+creating a audio file to work:
+    syntax: 
+        var audio = new Audio("audio track");
+        audio.play();
+
+
+5. How to Use Switch Statements in Javascript
+    The switch statement evaluates an expression, matching the expression's value against a series of case clauses, and executes statements after the first case clause with a matching value, until a break statement is encountered. The default clause of a switch statement will be jumped to if no case matches the expression's value.
+
+syntax:
+    switch (expression) {
+  case caseExpression1:
+    statements
+  case caseExpression2:
+    statements
+  // …
+  case caseExpressionN:
+    statements
+  default:
+    statements
+}
+
+
+6. A Deeper Understanding of Javascript Objects
+    creating an object is creating a variable, instead of assigning a values, we can set number of properties
+
+var objectName = {
+    property1 = value,   ----->here value is of string, numbers arrays like this
+    property2 = value,
+    property3 = value,
+}
+
+creating constructor function:
+  function ConstructorFunction(parameters){
+        this.property1 = value1;
+        this.property2 = value2;
+        this.property3 = value3;
+}
+initialize object is done by:
+  var object1 = new ConstructorFunction(values for parameters);
+
+7. Objects, their Methods and the Dot Notation
+    methods are associated with objects, when we call method can use dot notation
+constructor function can also takes another function as one of parameters
+
+using this methods and properties associated with objects on wbsites we can create custom behaviour of websites
+
+8. Using Keyboard Event Listeners to Check for Key Presses
+    The keydown event is fired when a key is pressed. the keydown event is fired for all keys, regardless of whether they produce a character value.
+      Use the event name in methods like addEventListener(), or set an event handler property.
+  syntax:
+      addEventListener("keydown", (event) => {});
+      onkeydown = (event) => {};
+
+9. Understanding Callbacks and How to Respond to Events
+      higher order function ---> a function that is able to take another function as input -->this function is callback function
+  It allows us to wait for something to finish happened
+  the event that triggered callback function passback through the callback function
+call back function is called by the objects that experience the event, when it happens, we get it to send some more informaton that only knows when event is happened
+
+10. Adding Animation to Websites
+  when a key is pressed or clicked the button in webpage , it gets flashed to get good user experience
+
+  function buttonAnimation(key){
+    add css class for animation style using .classList.add()
+then set timeout property for setting animation
+  }
   
+The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires. 
+  syntax: setTimeout(functionRef, delay)
