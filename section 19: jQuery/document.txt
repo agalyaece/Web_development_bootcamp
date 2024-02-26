@@ -54,3 +54,38 @@
           $("img").attr("href", "value to be changed") --->for setting new values to attributes
       class is also an html attribute
           $("img").attr("class")
+8. Adding Event Listeners with jQuery      
+    Category: Events
+    These methods are used to register behaviors to take effect when the user interacts with the browser, and to further manipulate those registered behaviors.
+        $("selector").eventToBeHappened(function(){
+                    changes to be happened
+        })
+ list of event listeners is listed in MDN docs
+
+9. Adding and Removing Elements with jQuery
+        where the newly created html elements to go
+    .before() --added before the refernced element
+    .after()  --added after the refernced element
+    .prepend()  --added before the content of the refernced element
+    .append() --added after the content of the refernced element
+    .remove() --removes the targeted element
+
+10. Website Animations with jQuery
+        .hide()
+        .show()
+        .toggle()
+ the above mentioned are very sudden in the sort of apperance and disapperance so we go for next methods
+
+    .fadeOut()
+    .fadeIn()
+    .fadeToggle()
+    .slideUp() --- used for collapsing
+    .slideDown()  --- used for uncollapsing
+    .slideToggle() ----- used for drop-down menu
+
+.animate({}) ----- Perform a custom animation of a set of CSS properties.
+        .animate( properties [, duration ] [, easing ] [, complete ] )
+    properties -- An object of CSS properties and values that the animation will move toward.
+    duration --- A string or number determining how long the animation will run.
+
+we can also chain any of these properties which occurs in order of representation
