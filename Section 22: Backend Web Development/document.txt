@@ -1,0 +1,28 @@
+1. Backend Web Development 
+    full stack ---> front end + back end
+  front end --->user can see or hear or interact with
+  back end ---> user can't make a interaction 
+
+  3main components
+    1.server
+    2. application
+    3.database
+
+  1.server
+    a computer that connected to a network can act as a server
+    server for live website shouldbe ON 24/7
+    listern for incomming requests from browsers from all around the world
+
+2.appliction
+  a logic that runs on the server
+  determines how to respond to the requests from the browsers
+  it send back the retrived data, html or sometimes the status code(application not know how to respond)
+
+3.database
+    basically not a requirement of web app 
+    usually webapp becames more complex  and larger , so it needs to store user data. this is why database needed
+    database is a permanent form of storage for the data
+
+webpage ---> only having front-end  i.e., having bits of html, css, js
+webapp ---> able to do something make a response to request for the user given information
+  
