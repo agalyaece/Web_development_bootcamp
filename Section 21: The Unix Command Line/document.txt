@@ -1,0 +1,46 @@
+1. Install Git Bash on Windows
+  download and install git bash for windows
+select a terminal to git bash and make it as default in terminal
+  
+2. Understanding the Command Line. Long Live the Command Line!
+  the shell, kernal, command line
+user Interface ---> user able to interacts with kernal inturn with hardware
+
+  two variants to shell:
+      1.Graphical User Interface(GUI)
+      2. command Line Interface
+  alternative way of interacting with kernal--- BASH shell
+    BASH shell ---> Bourne again shell -- is CLI for unox based system
+
+  why to use CLI?
+    for greater control and speed
+    easier and faster for doing things
+    GUI try to hide lot of complecated and unnecessary stuffs like configuration files from user
+  so, in CLI have full control and lot of flexibility
+
+  creating hidden directory --- $mkdir .name of directory
+
+  3. Command Line Techniques and Directory Navigation
+    list files and directories:  --- $ls
+    navigate to different directory : ---> $cd directory name
+    navigate to root directory  ---->   $cd ~ 
+    up and down buttons ---> toggle out in previous history
+    back to previous level -- > $cd ..
+  edit in middle of command line -- > holding alt and click wherever we want
+  goto begining of command line --> ctrl+A
+  goto to the end of command line ---> ctrl+E
+  clears current entire line without executing -- ctrl+U
+
+  4. Creating, Opening, and Removing Files through the Command Line
+      creating new folder --> $mkdir directory name
+      creating new file through CLI ---> $touch name of file.file extension
+      editing a file through CLI ----> $start name of file.file extension
+  can also specify which application to open for editing file: --- $code name of file.file extension
+    check for current directory ---  $pwd
+    delete files --- $rm name of file.file extension
+    delete all file in current directory ----> $rm *
+
+    remove folders --- $rm -r name of folder
+
+  learnenough.com ---> free command line tutorial
+  
