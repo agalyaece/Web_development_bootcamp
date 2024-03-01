@@ -1,0 +1,87 @@
+1. What is Express?
+   node+express
+      1. readability
+      2. less code
+      3. middleware
+  node --> creates runtime environment enables to use js on computer not in browser
+  express ---> js framework that allows to create backend for websites
+  therfore node+express
+
+      express --- fast, unopinionated, minimalist webframework for node.js
+    it allows to use js and node to create websites backend make whole things easier and simpler
+
+  2. Creating Our First Server with Express
+  backend --> server(that works for 24/7 listening for any requests ) + applications (written using some sort of code) + DB
+
+  simple back-end is an application running on computer
+  front-end is clientside that is accessible by user
+  back-end is server-side
+
+  we are building a server with express+node, using local computer as server
+
+  creating express server:
+    1.create a diretory
+    2. create index.js file
+    3. initialize NPM
+    4. install the express package
+    5. write server application in index.js
+    6.start server
+  what is port?
+      equivalent to doors in server and has unique address
+      so multiple ports running on same servers without any interface
+  to see which ports are open:
+    windows--> netstat -ano| findstr "LISTENING"
+    mac --> sudo isof -i-p-n | grep LISTEN
+
+ 3. HTTP Requests
+      transfr protocol : language that allows computer to interact with across the internet
+      GET -- request for resource
+      POST -- sending a resource to server
+      PUT -- update by replacing resource
+      PATCH -- update by patching up a resource
+      DELETE -- delete a resource -- client side from server side
+    
+      endpoints ---> destination for the resource that is transfered
+
+  4. Postman
+  making HTTP requests
+  the response maybe of 
+    1.text
+    2.html code
+    3. status code (can be viewed detail in mozilla.org
+
+      postman is a tool used to test our back-end without front end interaction
+
+5. Introduction to Middlewares
+  usingbody-parser together with HTML forms
+                    it sets between raw requests when it comes to the server before is get processed by the request handlers
+        usage:
+              1.preprocess the request
+              2. login the requests
+              3. authentication
+              4. process incase of errors
+      commonly used middlewares in node+express back-end is body-parser
+      parse incoming requests bodies in a middleware before the hamdles, available under req.body property
+      mostly used in html forms
+
+    to find path dynamically when hosting in cloud these 3lines of code is used
+                import { dirname } from "path";
+                import { fileURLToPath } from "url";
+                const __dirname = dirname(fileURLToPath(import.meta.url));
+
+    use body-parser inorder to parse information that is comming through the form on website
+    when submit is pressed the html form is made to post the request to the path specified
+                   
+6. Custom Middlewares
+                    used morgan package to log the request into a server
+                  use npm documentation for implementation
+    DIY middlewares
+                    app.use(req, res, next) { //specifies which middleware to use 
+                        console.log("request method: ", req.method)
+                        next(); // determines end of middleware and continues to the flow of html to the request handler
+                      }
+
+          here important is the order of representation
+
+  7. Secrets Access Project
+                    used http requests and custom middleware to parse the routes and find a way to access the secrets.html page
