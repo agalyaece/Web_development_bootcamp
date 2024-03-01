@@ -1,0 +1,57 @@
+1. What is Node.js? 
+  -understanding the runtime and advantages of node.js
+
+  back-end : different languages are used to write backend of our webapp
+              depending upon the language used can find the compatible frameworks along with it
+    why to use frameworks?
+        provides prebuilt components and structure to built applications without need to write a single line of code from scratch
+
+    node: an asynchronous event-driven jvascript runtime , is designed o built scalable network applications
+
+    why node? 
+        always front end goes with html,css,javascript
+        in node backend also be in js, allows to use js everywhere in webapp
+
+    keybenefits:
+          1. allows js to use across  the entire stack, share code between client and server side
+          2.easy scaling of large scale applications projects
+          3.fast and non-blocking
+          4.huge ecosystem because of large open source modules and packages
+
+
+2. Using Node.js
+          versioning: after checking successful installation of node go to terminal and check
+                $ node -v ---->this gives version of node and indictes successful instalation
+          node REPL: real eval print loop
+                is  a computer runtime environment where user inputs are read and evaluated and results are returned to the user
+          initialize node: $node
+        node is a js runtime and enable to run the js code in node console
+
+3. How to Use the Native Node Modules:
+            allows to leverage existing code that built into node that makes way to powerful than just doing with js
+            starting toolset
+          nodejs documentation to study about modules it covers
+            it eliminates the js out of browser able to access files that can read and write files on the server or local computer
+
+            CLI ---> $node jsfile.js
+
+4. The NPM Package Manager and Installing External Node Modules
+            it is a place which collects the modules which people had built for node like github
+            like community tool library
+            opensource
+          NPM is prebundled with node so just initialize it by ---> $npm init
+
+        there are so many modules we can use any of the modules in it by the steps given in docs
+
+ECMA script modules:
+            provides standarized way of using js  to be consistent on front and back-end
+            improve in tree-shaking
+
+        here converting type into module this enables ECMA
+    can simply write out code linke this------------>  import method or object from package-name
+
+
+5.  [Project] QR Code Generator
+             Used the inquirer npm package to get user input.
+             Used the qr-image npm package to turn the user entered URL into a QR code image.
+             Created a txt file to save the user input using the native fs node module.
