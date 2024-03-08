@@ -44,4 +44,48 @@ The SQL WHERE Clause
   syntax:
       SELECT column1, column2, ...
       FROM table_name
-      WHERE condition;
+      WHERE condition; --- operations for condition is available in docs
+
+3.  Updating Single Values and Adding Columns in SQL
+  The SQL UPDATE Statement
+        The UPDATE statement is used to modify the existing records in a table.
+  Syntax:
+      UPDATE table_name
+      SET column1 = value1, column2 = value2, ...
+      WHERE condition; 
+
+  SQL ALTER TABLE Statement
+      - used to add, delete, or modify columns in an existing table.
+      - is also used to add and drop various constraints on an existing table.
+syntax: To add a column in a table
+      ALTER TABLE table_name
+      ADD column_name datatype; 
+  ALTER TABLE - DROP COLUMN
+      ALTER TABLE table_name
+      DROP COLUMN column_name;
+
+4. SQL Commands: DELETE
+  The SQL DELETE Statement
+      - used to delete existing records in a table.
+syntax:
+    DELETE FROM table_name WHERE condition;
+
+5. Understanding SQL Relationships, Foreign Keys and Inner Joins
+    SQL FOREIGN KEY Constraint
+          The FOREIGN KEY constraint is used to prevent actions that would destroy links between tables.
+          A FOREIGN KEY is a field (or collection of fields) in one table, that refers to the PRIMARY KEY in another table.
+syntax:
+      CREATE TABLE Orders (
+          OrderID int NOT NULL,
+          OrderNumber int NOT NULL,
+          PersonID int,
+          PRIMARY KEY (OrderID),
+          FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+      ); 
+
+INNER JOIN
+    The INNER JOIN keyword selects records that have matching values in both tables.
+Join Products and Categories with the INNER JOIN keyword:
+  syntax:       SELECT ProductID, ProductName, CategoryName
+                FROM Products
+                INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID; 
