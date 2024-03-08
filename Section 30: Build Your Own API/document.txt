@@ -1,1 +1,44 @@
+1.. Building your own APIs
+  why should go for api? ---> data gathering, data proccessing , service all are made into a single algorithm
+        using that algorithm wec can built our desired product
+
+rapid API---> collects and allows people to host API
+there is a free and public api for developers
+
+Monetised api: there involve lot of work in doing this due to following reason
+  1. data collection
+  2. algorithm/service
+  3. simplified interface
+
+internal API:
+    not supported for external use
+    used internally by  a individual api
+
+REST api:
+    what makes an api RESTful?
+      1.uses standard HTTP method
+      2. have standard data format in response with JSON or XML
+      3. client and servers are different 
+      4. it is stateless therefore it allows server to serve many clients and many requests
+      5. resource-based  -- centered around resources uses URL/URI
+
+2. Creating GET Routes
+    Express lets to define routes using the app.get() function
+    This function has two parameters. We’ll use the first parameter to define the path. --->endpoin
+    Next,  a callback function as the second parameter, which defines what will do when the request is called.
+        This function has two parameters:
+            1. the request object (which contains details like the HTTP method, headers, and request body) and the response object (which defines the information that we want to send). 
+            2. The response (res) object contains different methods of sending a response to the client, such as res.send(), res.json(), and res.render().
+  
+
+3. Creating POST, PUT, and PATCH Routes
+      Express lets to define routes using the app.post/put/patch() function
+  post is to insert a new data --- created a new data constant for new data and used push method to post it in route
+put is to update a whole data -- can assign the replaced data with old data
+patch is to update a specific data --- can assign a replaced value only for a specified fields
+
+4. Creating the DELETE Route
+    maps the id for the one which has to delete
+    can use authentication for delete operation
+
 
