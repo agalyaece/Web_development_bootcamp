@@ -1,0 +1,47 @@
+CRUD operations:
+  C -- Create
+  R -- Read
+  U -- Update
+  D -- Delete
+
+
+1.  SQL Commands: CREATE Table and INSERT Data
+  The CREATE TABLE statement is used to create a new table in a database.
+  syntax:
+      CREATE TABLE table_name (
+                column1 datatype NOT NULL,
+                column2 datatype,
+                column3 datatype,
+               ....
+                PRIMARY KEY (column_name1)
+            ); 
+  when value is assigned to not null in case of creating record without a value for the primary key it will nor create in table it throws an error
+
+The SQL INSERT INTO Statement
+      -used to insert new records in a table.
+It is possible to write the INSERT INTO statement in two ways:
+    1. Specify both the column names and the values to be inserted
+    2. adding values for all the columns of the table not need to specify the column names in the SQL query. 
+   
+    syntax: 
+        INSERT INTO table_name
+        VALUES (value1, value2, value3, ...); 
+
+2.  SQL Commands: READ, SELECT, and WHERE
+      The SQL SELECT Statement
+          The SELECT statement is used to select data from a database.
+    synatx: 
+        SELECT column1, column2, ...
+        FROM table_name;
+      Select ALL columns
+          If you want to return all columns, without specifying every column name, you can use the SELECT *
+    syntax: 
+          SELECT * FROM Customers;
+
+The SQL WHERE Clause
+      The WHERE clause is used to filter records.
+          - extract only those records that fulfill a specified condition.
+  syntax:
+      SELECT column1, column2, ...
+      FROM table_name
+      WHERE condition;
