@@ -1,0 +1,27 @@
+1. Databases Explained: SQL vs. NoSQL
+     database --- data persistance, permanent state of memory
+
+types: 
+    1. SQL DB
+    2. NOSQL DB
+
+1. SQL
+        structurally stored data in table
+      line by line adding
+      ability to form relationship therfore relational DB
+
+  popular type of SQL DB are  
+      1. oracle, microdoft DB --- paid versions
+      2. postgresql, mysql, sqlite --- opensource 
+
+2. NOSQL:
+      advantage -- flexibility,datas are stored in json format not like table
+
+        able to change the structure of data afterwards without changing the entire database
+        modify data whenever needed
+        scalability - dynamically can increase fields in rows and columns
+
+  popular type of NOSQL DB are
+          1. dynamoDB, mongoDB both are company run DB
+          2. redis -- open source
+        
