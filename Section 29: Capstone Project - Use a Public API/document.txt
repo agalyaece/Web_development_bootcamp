@@ -1,1 +1,5 @@
+full project uploaded in this folder
+
+created a web app using openui api that extracts the uv value provided the latitude and longitude of the place and produces a output whether a user wants to take sunscreen or not 
+
 
