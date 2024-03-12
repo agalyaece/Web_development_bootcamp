@@ -1,0 +1,32 @@
+1. Introduction to Authentication
+    why Authentication?
+      users --->started to use  --->they creates individual data
+  inorder to associate the user data created with the own individual ---> creating a account
+  identify them on db
+  certain area og websites --restricted to use -- authentication needed
+  creating authentication in 6 different levels
+
+2.  Level 1 - Registering Users with Email and Password
+   when a new user signsup via your website, used a query to create a new user in user table and save their email and password . once registered new user , res.render () to secrets.ejs
+   when user tries to login fetch that user from db based on the username , then check if password that the user entered matches the password that was retrieved from the database
+
+3. Level 2 - Encryption and Hashing
+    encryption --> converting information or data into a cypher text especially to prevent unauthorized access by encryption key 
+  hashing--> no usage of encryption key
+    password ---> hash function ---> hash(impossible to turn back to password)
+
+4.  Level 3 - How to Salt Passwords for Improved Encryption
+    adding salt to hash to produce password by adding number of salt rounds
+  npm --package -- > bcrypt
+
+5. Managing Cookies and Sessions
+      using cookies so that users dn't have to login everytime they access your site
+  cookies ---> storing last session of your browser
+  session --> time to maintain cookies
+
+  passport -->(npm library)
+    simple , unobtrusive, authentication for node.js
+  -- is authentication middleware for node.js
+  there are several strategies for passport, here we used passport-local hence we are using in local server
+  passport-local  ---->strategy for authentication with a username and password
+  
