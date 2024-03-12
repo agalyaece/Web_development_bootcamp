@@ -1,1 +1,161 @@
+1. Introduction to Postgres:
+  open source rlational database management system
+  free and opensource
+  widelt used in industry
 
+steps to execute db in express and node js
+  import client from 'pg"
+
+  const db = ({ insert all the required parameters})
+  db.connect(); // to establish connections in db
+
+2. Understand how to use keys, Postgres types and keywords
+    here can maintain individual columns for fields and rows for individual records
+
+creating table is same as sql command
+
+3. Use pgAdmin to CREATE a TABLE
+    practiced creating databases and tables inside pgadmin
+
+4. READ data from a Postgres database
+    syntax: SELECT * FROM cars; 
+include this query into express and node route 
+      const <variable> = await db.query("SELECT * FROM <tablename>);
+we can limit by setting values for checking condition
+
+5. Query data using SELECT, WHERE, and LIKE
+    select all by SELECT *
+    select one column by  SELECT <column name> from <table name>
+    select multi column by SELECT <column name1> <column name2> <column name3>
+    WHERE equals ---> SELECT <column> FROM <table> WHERE<condition>
+    WHERE LIKE ---> SELECT <column> FROM <table> WHERE<column> LIKE <pattern>
+                                        pattern can be of "string" || "%" and combination of both
+
+6. UNIQUE and NOT NULL | Travel Tracker Part 1
+  NOT NULL --> missing or empty values are not allowed 
+              attempts to add NULL will result in error
+  UNIQUE ---> values cannot be repeated in the table . no other value stored can be the same(t avoid duplicates)
+
+  Travel Tracker Part 1:
+      created table calleld visited_countries thus by creating database  and added a new table into it
+  step 1: added the code so that each country is manually added inside pgadmin showsup in a teal color on the world map
+  step 2: created a "/" route for homepage inside index.js and queried the db for the visited_countries then passed the data to the index.ejs, so that visited countries are rendered
+
+7. INSERT and add Data | Travel Tracker Part 2:
+    step 1: used pgAdmin query tool to insert a new row into the table with the provided values
+    step 2: created new table using pgAdmin called countries inside the  database, can use parameterized query to insert into the values
+    step 3: handled using the form-entry hen the user clicks add button, check the name that user entered against your database to obtain that country's code
+          saved that country code into the viited countries table and update the map so that new country is shown in teal color, used "/add" route
+
+8. Travel Tracker Part 3:
+    this is to handle errors
+when user enters a country that does not exist shows the message "country doesnot exist, try again"
+when user enters a country that has been added previously , sho wthe message country already added
+accomplished this by using try-catch block and passing an errror to index.ejs
+
+also country which has a name prefixed or suffixed that can be handled by this method:
+  WHERE LIKE ---> SELECT <column> FROM <table> WHERE<column> LIKE <pattern>
+                                        pattern can be of "string" || "%" and combination of both
+
+
+9. One to One Relationships & Inner Joins:
+  relationship types:
+    1.one to many
+    2.one to one
+    3.many to many
+relationship goals: splitting tables inorder to ease access by maintaining one to one realtionships
+
+CREATE TABLE <table name1> (
+    id SERIAL PRIMARY KEY,
+......
+);
+
+CREATE TABLE <table name2> (
+    id INTEGER REFERENCES tablename1(id) UNIQUE,
+......
+);
+ONE TO ONE
+SELECT *(all)
+FROM tablename1
+JOIN(inner join)  tablename2
+ON (criteria for joining)tablename1.id = tablename2.id
+
+10.  One to Many Relationships
+    use REFERENCES to link tables in one to many relationships with foreign key
+    very frequently used
+
+CREATE TABLE <table name1> (
+    id SERIAL PRIMARY KEY,
+......
+);
+
+CREATE TABLE <table name2> (
+id SERIAL PRIMARY KEY,    
+student_id INTEGER REFERENCES tablename1(id),
+......
+);
+ONE TO MANY
+SELECT *(all) /// selcting particular columns SELECT column1, column2, column3
+FROM tablename1
+JOIN(inner join)  tablename2
+ON (criteria for joining)tablename1.id = tablename2.id
+
+11. Many to Many Relationships & Aliases
+complex and least used
+
+CREATE TABLE <table name1> (
+    id SERIAL PRIMARY KEY,
+......
+);
+
+CREATE TABLE <table name2> (
+    id SERIAL PRIMARY KEY,
+......
+);
+
+CREATE TABLE <table name3> (
+ table name1_id INTEGER REFERENCES tablename1(id),   
+table name2_id INTEGER REFERENCES tablename2(id),
+......
+);
+
+MANY TO MANY
+SELECT *(all) /// selcting particular columns SELECT column1, column2, column3
+FROM tablename3
+JOIN(inner join)  tablename1 on tablename1.id = tablename3.column_name
+JOIN(inner join)  tablename2 on tablename2.id = tablename3.column_name
+
+aliases using AS keyword
+SELECT  tablename1.id AS tb1 column1, column2, column3
+FROM tablename3
+JOIN(inner join)  tablename1 AS t1  on tablename1.id = tablename3.column_name
+JOIN(inner join)  tablename2 AS t2 on tablename2.id = tablename3.column_name
+
+ommiting AS keyword also works but not recommended
+
+12. How to update and delete data & tables
+  ALTER TABLE -- updating schema for tables
+  syntax:  ALTER TABLE <table to alter>
+              <do something>
+can use ALTER statement to apply a UNIQUE constraint for two different column names
+
+DROP TABLE: checking for the created tables if already exists then drop that previously existed table and insert a newly created one
+    syntax:
+        DROP TABLE <name of table>
+
+UPDATE  DATA: -- updating a piece of data
+  UPDATE <table to update>
+  SET <column to update> = values
+  WHERE <some condition>
+
+ORDER BY
+ SELECT *
+  FROM <some table> 
+  ORDER BY <some condition> condition may be ascending or decending
+
+DELETE DATA
+  DELETE FROM <table to delete>
+  WHERE <some condition>
+
+
+    
