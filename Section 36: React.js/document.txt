@@ -1,0 +1,209 @@
+1. What is React?
+    A javascript library for building user interface
+  essentially a front-end framework
+easier and faster to build UI
+  breaking a complex webapp into a tree structure
+  creating a custom html element defining the styling functionality of each of them and can br reusable
+
+React - combining samll amount of HTML, CSS and JS into single components
+  each perform different functions and apperance
+  each component is able to talk tothe server independently
+  rerendering the changes by comparing(old & new) its components
+
+  therfore very efficient and faster
+
+2.  Introduction to JSX and Babel
+      importing the dependencies (react and react-dom)
+  using react to create something on screen , use render functin
+
+  ReactDOM.render(what to show,  where to show it, optional callback)
+
+  html is picked up by compiler and gets converted or compiled to JS
+
+  inside react having babel
+      babel ---> javascript compiler 
+  able to take next generation js to plain old jss that every single browser can understand box standard old javascript
+  var React = require("react") --old version
+  using import and export ableto modularize the dependencies
+
+3. Javascript Expressions in JSX & ES6 Template Literals
+  jsx--> inside a javascript there lives a HTML inside again lives a javascript
+{} -- using this any javascript expressions can be added inside a html element and any statements cannot be executed  inside it
+
+  template literals string ---> {`${name} ${name}`}
+
+4. JSX Attributes & Styling React Elements
+  Apply CSS styles to React components.
+  Use CSS modules or styled-components.
+
+  css style name should match with js camelcased style
+
+5. Inline Styling for React Elements
+  To style an element with the inline style attribute, the value must be a JavaScript object
+   In JSX, JavaScript expressions are written inside curly braces, and since JavaScript objects also use curly braces, the styling is written inside two sets of curly braces {{}}.
+   Since the inline CSS is written in a JavaScript object, properties with two names, like background-color, must be written with camel case syntax
+  can also create an object with styling information, and refer to it in the style attribute
+  can write  CSS styling in a separate file, just save the file with the .css file extension, and import it in the application.
+
+6.React Components
+     Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+  When creating a React component, the component's name MUST start with an upper case letter.
+     build a seperate files for each components
+      Use props to pass data between components.
+     
+7. Javascript ES6 - Import, Export and Modules
+    can create modules in JavaScript. In a module, there can be classes, functions, variables, and objects as well. To make all these available in another file, we can use export and import. The export and import are the keywords used for exporting and importing one or more members in a module.
+  Export: export a variable using the export keyword in front of that variable declaration.
+      export default function or variable name
+  Import:  import a variable using import keyword.  can specify one of all the members that you want to import from a JavaScript file.
+      import member_to_import from “path_to_js_file”;
+
+    // You can also use an alias while importing a member.
+        import Greeting as Greet from "./export.js";
+
+// If you want to import all the members but don’t want to Specify them all then you can do that using a ' * ' star symbol.
+        import * as exp from "./export.js";
+
+8. Keeper App Project - Part 1 Challenge
+  1. Created a new React app.
+  2. Created a App.jsx component.
+  3. Created a Header.jsx component that renders a <header> element to show the Keeper App name in an <h1>.
+  4. Created a Footer.jsx component that renders a <footer> element to show a copyright message in a <p> with a dynamically updated year.
+  5. Created a Note.jsx component to show a <div> element with a <h1> for a title and a <p> for the content.
+
+9. React Props
+  props are arguments passed into React components.
+  Props are passed to components via HTML attributes.
+  props stands for properties.
+  React Props are like function arguments in JavaScript and attributes in HTML.
+
+  Pass Data--- Props are also how you pass data from one component to another, as parameters.
+    If  having a variable to send, and not a string just put the variable name inside curly brackets
+
+10. React DevTools
+    Use React Developer Tools to inspect React components, edit props and state, and identify performance problems.
+  The easiest way to debug websites built with React is to install the React Developer Tools browser extension. 
+  Now, if  visit a website built with React, will see the Components and Profiler panels.
+
+11. Mapping Data to Components
+  map each custom pieces of data to each custom components
+  used to map any array(each having same properties and different values) from websites to map to the components
+{contacts.map(passing function)}
+
+12. Javascript ES6 Map/Filter/Reduce
+  Map -Create a new array by doing something with each item in an array.
+  Filter - Create a new array by keeping the items that return true.
+  Reduce - Accumulate a value by doing something to each item in an array.
+  Find - find the first item that matches from an array.
+  FindIndex - find the index of the first item that matches.
+.subString(start, end) ---> truncate to the specified value
+  
+13. Javascript ES6 Arrow functions
+  Arrow functions are anonymous functions i.e. they are functions without a name and are not bound by an identifier. 
+  Arrow functions do not return any value and can be declared without the function keyword.
+  it replaces seperate function and inserting like a function call in another function using arrow 
+
+14.  Keeper App Project - Part 2
+  Render all the notes inside notes.js as a seperate Note component.
+done using props and map in react
+
+15.  React Conditional Rendering with the Ternary Operator & AND Operator
+  Ternary Operator:
+      condition? do if true : do if false
+  && operator
+    condition && expression ---->(condition --checks for it)
+      true && expression(works  i.e, rendered)
+      false && expresion (wont work i.e, not-rendered)
+
+16. State in React - Declarative vs. Imperative Programming
+  to make apps more interactive , define user interface depends upon the state variable , this kind of programming is called declartive programming
+  
+  A declarative style, like what react has, allows you to control flow and state in your application by saying "It should look like this".
+  An imperative style turns that around and allows you to control your application by saying "This is what you should do".
+
+17. React Hooks - useState  
+  way of being making our websites interactive and changable state
+  use hook inside the functional components
+  creates a function that render components and  create a use state hook inside it 
+  used for dynamically updating the site
+    useState is an array and has [(initial state), (function)]
+destructured array: 
+    const[count, setCount] = useState(initial value for count )
+
+
+18. javascript ES6 Object & Array Destructuring 
+  the destructuring assignment syntax is a javascript expression that makes it possible to unpack the values from arrays or properties from objects into distinct variables 
+  names inside destructuring array is unique
+    const[cat, dog] = animals --(this may be a array)
+
+  const {sound, name} = cat --(this is a javascript object)
+  here the name of the key is the properties of the object
+
+can assign any variable sto properties of the object: const {sound: catSound, name: catName} = cat
+can assign a default value when a data is not well defined : const {sound: "fluffy", name: catName} = cat
+      if any values for name is not assigned in db then it takes a default value asigned here
+
+  const {sound, name, feedingRequirements:{food,water}} = cat ----> this is object inside an object this is called extensive destructuring
+
+19.  Event Handling in React
+  how to detect when user interacts with website, how to render different components based on different interactions
+  
+  Global Event Attributes
+    HTML has the ability to let events trigger actions in a browser, like starting a JavaScript when a user clicks on an element.
+  use camel cased event attribute names to render
+
+20. React Forms
+  how to set state and useState
+    The React useState Hook allows us to track state in a function component.
+    State generally refers to data or properties that need to be tracking in an application.
+  
+  In HTML, form elements such as <input>, <textarea>, and <select> typically maintain their own state and update it based on user input.
+  
+  Handling Multiple Inputs
+      When you need to handle multiple controlled input elements, you can add a name attribute to each element and let the handler function choose what to do based on the value of event.target.name.
+
+21. Class Components vs. Functional Components
+        hooks vs class --two different method of managing the states
+        hooks is now used for modern programming
+Functional Components :
+        These are simply JavaScript functions. We can create a functional component to React by writing a JavaScript function.
+hooks:
+      Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
+      Although Hooks generally replace class components, there are no plans to remove classes from React.
+      using the useState Hook to keep track of the application state.
+
+Hook Rules
+  There are 3 rules for hooks:
+    Hooks can only be called inside React function components.
+    Hooks can only be called at the top level of a component.
+    Hooks cannot be conditional
+
+Note: Hooks will not work in React class components.
+
+22. Changing Complex State
+        managing the state if js object where want to retrieve previous state of an object
+        used in contact app or like input form
+        can store object inside useState() method instead of a value 
+        controlled and uncontrolled components
+
+23.  Javascript ES6 Spread Operator
+        Spread syntax can be used when all elements from an object or array need to be included in a new array or object, or should be applied one-by-one in a function call's arguments list. 
+        There are three distinct places that accept the spread syntax:
+            Function arguments list (myFunction(a, ...iterableObj, b))
+            Array literals ([1, ...iterableObj, '4', 'five', 6])
+            Object literals ({ ...obj, key: 'value' })
+
+24. Managing a Component Tree  - refer video for manging it is a small and unique steps for each thing
+
+25. Keeper App Project - Part 3
+        1. Implement the add note functionality.
+              //- Create a constant that keeps track of the title and content.
+              //- Pass the new note back to the App.
+              //- Add new note to an array.
+              //- Take array and render seperate Note components for each item.
+      
+        2. Implement the delete note functionality.
+              //- Callback from the Note component to trigger a delete function.
+              //- Use the filter function to filter out the item that needs deletion.
+              //- Pass a id over to the Note component, pass it back to the App when deleting.
+
